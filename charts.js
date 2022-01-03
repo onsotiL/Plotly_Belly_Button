@@ -124,7 +124,7 @@ function buildCharts(sample) {
       marker: {
         size: sampValues,
         color: otuIds,
-        colorscale: "Earth"
+        colorscale: "Jet"
       }
     }];
     console.log(bubbleData);
@@ -167,10 +167,10 @@ function buildCharts(sample) {
           bar: {color: "grey"},
           steps: [
             { range: [0, 2], color: "red" },
-            { range: [2, 4], color: "orange" },
+            { range: [2, 4], color: "purple" },
             { range: [4, 6], color: "yellow" },
             { range: [6, 8], color: "lime" },
-            { range: [8, 10], color: "green" }]
+            { range: [8, 10], color: "Blue" }]
         }
       }
     ];
@@ -190,7 +190,8 @@ function buildCharts(sample) {
       }]
     };
 
-    // 6. Use Plotly to plot the gauge data and layout.
+
+        // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout, {responsive: true});
   });
 }
